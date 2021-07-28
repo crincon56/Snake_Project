@@ -6,8 +6,8 @@ class Food(Turtle):
 
     def __init__(self):
         """
-            Inherits from class turtle,
-            creating food object.
+            Hereda de la funcion Turtle,
+            creando objeto de comida.
         """
         super().__init__()
         self.shape("turtle")
@@ -19,7 +19,8 @@ class Food(Turtle):
 
     def refresh(self):
         """
-            Create a new food randomly.
+            Crea una nueva comida al azar,
+            sobre la pantalla.
         """
         random_x = random.randint(-280, 280)
         random_y = random.randint(-280, 280)

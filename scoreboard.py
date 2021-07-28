@@ -1,5 +1,6 @@
 from turtle import Turtle
 ALIGNMENT = "center"
+# Letra para puntos.
 FONT = ("Arial", 24, "normal")
 
 
@@ -7,8 +8,8 @@ class Scoreboard(Turtle):
 
     def __init__(self):
         """
-            Inherits from class turtle,
-            creating scoreboard object.
+            Hereda de la funcion Turtle,
+            creando objeto de marcador.
         """
         super().__init__()
         self.score = 0
@@ -20,22 +21,22 @@ class Scoreboard(Turtle):
 
     def update_scoreboard(self):
         """
-            Updates the table,
-            clearing the score in the object.
+            Actualiza la tabla.
         """
         self.write(f"Score: {self.score}", align=ALIGNMENT, font=FONT)
 
     def game_over(self):
         """
-            Show a game over text.
+            Muestra game over sobre texto.
         """
         self.goto(0, 0)
         self.write("GAME OVER", align=ALIGNMENT, font=FONT)
 
     def increase_score(self):
         """
-            Increase the punctuation
-            on the object scoreboard.
+            Aumenta la puntuación
+            en el marcador de objetos,
+            limpiando el puntaje anterior.
         """
         self.score += 1
         self.clear()
