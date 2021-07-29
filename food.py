@@ -1,7 +1,9 @@
+# Importa funcion Turtle de modulo turtle.
 from turtle import Turtle
+# Importa modulo random.
 import random
 
-
+# Crea objeto de comida.
 class Food(Turtle):
 
     def __init__(self):

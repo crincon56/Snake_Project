@@ -1,9 +1,11 @@
+# Importa funcion Turtle de modulo turtle.
 from turtle import Turtle
+# Alinea texto de puntaje.
 ALIGNMENT = "center"
 # Letra para puntos.
 FONT = ("Arial", 24, "normal")
 
-
+# Crea tabla de puntajes.
 class Scoreboard(Turtle):
 
     def __init__(self):

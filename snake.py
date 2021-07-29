@@ -1,3 +1,4 @@
+# Importa funcion Turtle de modulo turtle.
 from turtle import Turtle
 
 # Puntos cardinales para la base del cuerpo.
@@ -10,7 +11,7 @@ DOWN = 270
 LEFT = 180
 RIGHT = 0
 
-
+# Crea clase para el cuerpo de la serpiente.
 class Snake:
 
     def __init__(self):
@@ -21,7 +22,7 @@ class Snake:
     def create_snake(self):
         """
             Crea la serpiente usando los puntos cardinales.
-            indicado en la variable = STARTING_POSITIONS.
+            Indicado en la variable = STARTING_POSITIONS.
         """
         for position in STARTING_POSITIONS:
             self.add_segment(position)
@@ -37,6 +38,9 @@ class Snake:
         self.segments.append(new_segment)
 
     def extend(self):
+        """
+            Se encarga de ampliar los cuadros de la serpiente.
+        """
         self.add_segment(self.segments[-1].position())
 
     def move(self):

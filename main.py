@@ -1,3 +1,4 @@
+# Importa funcion Screen de la libreria turtle y los modulos que creados previamente.
 from turtle import Screen
 from snake import Snake
 from food import Food
@@ -49,4 +50,5 @@ while game_is_on:
             game_is_on = False
             scoreboard.game_over()
 
+# Cierra pantalla.
 screen.exitonclick()
